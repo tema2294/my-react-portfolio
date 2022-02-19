@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import App from "../App";
 
 
 
@@ -9,7 +9,7 @@ const AppRouter = () => {
 
     return (
         <Routes>
-
+            <Route path="/" element={<App/>}/>
         </Routes>
     )
 }
